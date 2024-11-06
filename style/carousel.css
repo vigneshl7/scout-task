@@ -1,0 +1,109 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dark-grey: #202020;
+    --grey: #9b9b9b;
+    --jetblack: #0a0a0a;
+    --light-grey: #101010;
+    --light-blue: #00a3a3;
+    --badge-color:#4094FF;
+    --scroll-thumb:#666666;
+    --scroll-track:#EEEEEE;
+  }
+.carousel-category-container{
+    padding: 15rem 4.375rem;
+}
+.category-title{
+    font-size: 3.875rem;
+    line-height: 4.25rem;
+    letter-spacing: 2px;
+    color: var(--light-grey);
+    margin-bottom: 50px;
+    font-family: 'Helvetica Now Text Light';
+
+}
+.carousel-wrapper{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.carousel-wrapper::-webkit-scrollbar{
+    height: .875rem;
+}
+.carousel-wrapper::-webkit-scrollbar-track {
+    border-radius: 34px; 
+    background-color: var(--scroll-track);
+}
+.carousel-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 34px; 
+    background-color: var(--scroll-thumb); 
+   
+}
+
+.carousel-items{
+    display: flex;
+    margin-bottom: 6.25rem;
+}
+.carousel-item{
+    position: relative;
+    margin-right: 4.0625rem;
+}
+.carousel-image{
+    width: 28.4375rem;
+    height: 36.1875rem;
+    border-radius: 10px;
+}
+.product-text-container{
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+}
+.product-name{
+    line-height: 68px;
+    letter-spacing: 2px;
+    font-family: 'Helvetica Now Text Light';
+    font-size: 63px;
+    margin-right: 10px;
+    color: var(--light-grey);
+}
+.product-badge-text{
+
+    font-family: 'Helvetica Now Text Medium';
+    background-color: var(--badge-color);
+    color: var(--white);
+    padding: 5px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 21px;
+    width: 46px;
+}
+@media (max-width: 1024px) {
+    .carousel-category-container {
+        padding-top: 106px ;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    .category-title{
+        font-size: 3.25rem;
+        font-family: 'Helvetica Now Text Light';
+    
+    }
+    .carousel-image{
+        width: 340px;
+        height: 437px;
+        border-radius: 10px;
+    }
+    .carousel-item{
+        margin-right: 3.125rem;
+    }
+    .product-name{
+        font-size: 3.25rem;
+    }
+    .carousel-items{
+        margin-bottom: 3.75rem;
+    }
+}
